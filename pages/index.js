@@ -1,10 +1,10 @@
-import { Button } from "@mui/material";
 import React from "react";
+import HomePage from "../components/HomePage";
 
 const Home = () => {
   return (
     <>
-      <h1>This is Home page</h1>
+      <HomePage />
     </>
   );
 };
