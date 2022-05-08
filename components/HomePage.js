@@ -1,10 +1,14 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 const HomePage = () => {
   return (
     <>
+      <Head>
+        <title>AUTHY</title>
+      </Head>
       <div className="flex items-center justify-center h-[65vh] flex flex-col">
         <Typography className="text-2xl text-green-600 font-bold">
           WELCOME ! !

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../context/authContext";
 import Link from "next/link";
 import { Button, Typography } from "@mui/material";
+import Head from "next/head";
 
 const secret = () => {
   const {
@@ -9,6 +10,9 @@ const secret = () => {
   } = useContext(Context);
   return (
     <>
+      <Head>
+        <title>Secret page</title>
+      </Head>
       <div className="h-[65vh] flex flex-col justify-center items-center ">
         {user !== null ? (
           <>

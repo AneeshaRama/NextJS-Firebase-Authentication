@@ -15,6 +15,7 @@ import { auth } from "../firebase";
 import { useSnackbar } from "notistack";
 import Router from "next/router";
 import { Context } from "../context/authContext";
+import Head from "next/head";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -55,6 +56,9 @@ const Login = () => {
   return (
     <>
       <div>
+        <Head>
+          <title>Login | AUTHY</title>
+        </Head>
         <Container component="main" maxWidth="xs">
           <Box className="mt-5 flex flex-col items-center">
             <Avatar className="bg-orange-500">
