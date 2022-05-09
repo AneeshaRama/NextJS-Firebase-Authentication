@@ -16,5 +16,14 @@ For more information visit this link: https://bit.ly/3vU5pyO
 ### TailwindCSS and MaterialUI
 I have used modern tools like **TailwindCSS** and **MaterialUI** for styling and making website responsive. 
 
+
+### State Management using Context API
+When user logs in, firebase sends access token and user information to the client. but it is not persistable. when user refresh the page, the token and user information will be lost. As a result, user needs to login on each refresh which is not good user experience.
+
+To overcome this,I have used **Context API** which is inbuilt feature of ReactJS(NextJS is framework of ReactJS) instead of redux or recoil. Context API does not need any middleware to make api calls or to handle asynchronous requests. On the other hand redux needs some middlewares like **redux thunk** or **redux saga** to handle asyncrhronous requests.
+
+Now whenever user refreshes the page, token and user information is still available in the global state. 
+
 You can check this project here : https://nextjs-firebase-authentication-5fv7oq1ix-aneesharama.vercel.app/
+
 
